@@ -51,8 +51,16 @@ public class SaveLoad {
     return valor;
     }
     
-    public void lista() {
-        
+    public void lista() throws IOException {
+        String valor;
+        FileInputStream stream = new FileInputStream("~/.local/HTML-Coder/comandos.json");
+            InputStreamReader reader = new InputStreamReader(stream);
+            BufferedReader br = new BufferedReader(reader);
+            String linha = br.readLine();
+            while(linha != null) {
+                valor = valor + "\n" + linha;
+                linha = br.readLine();
+            }
     }
     
 }

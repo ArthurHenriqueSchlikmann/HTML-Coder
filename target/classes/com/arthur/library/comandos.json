@@ -1,13 +1,13 @@
 {
 "comandos" : [
-{
-    "nome": "paragrafo",
-    "comando" : "p",
-    "tag" : "<p>",
-    "fimteg" : "</p>"
-},
-{
+    {
+        "nome": "paragrafo",
+        "comando" : "p",
+        "tag" : "<p>",
+        "fimteg" : "</p>"
+    },
+    {
     
-}
+    }
 ]
 }
