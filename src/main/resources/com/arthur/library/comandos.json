@@ -1,4 +1,5 @@
-[
+{
+"comandos" : [
 {
     "nome": "paragrafo",
     "comando" : "p",
@@ -9,3 +10,4 @@
     
 }
 ]
+}
