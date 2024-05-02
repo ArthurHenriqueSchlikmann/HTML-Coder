@@ -36,8 +36,10 @@ public class Menu extends javax.swing.JFrame {
         label1 = new java.awt.Label();
         list1 = new java.awt.List();
         textArea1 = new java.awt.TextArea();
+        dlgConfig = new javax.swing.JDialog();
+        fleAbreFecha = new javax.swing.JFileChooser();
         btnCoder = new javax.swing.JButton();
-        btnClose = new javax.swing.JButton();
+        btnConfig = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
 
         dlgCoder.setTitle("HTML Coder");
@@ -76,13 +78,13 @@ public class Menu extends javax.swing.JFrame {
         });
         getContentPane().add(btnCoder, java.awt.BorderLayout.LINE_START);
 
-        btnClose.setText("CMD");
-        btnClose.addActionListener(new java.awt.event.ActionListener() {
+        btnConfig.setText("Configuraçoes");
+        btnConfig.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCloseActionPerformed(evt);
+                btnConfigActionPerformed(evt);
             }
         });
-        getContentPane().add(btnClose, java.awt.BorderLayout.LINE_END);
+        getContentPane().add(btnConfig, java.awt.BorderLayout.LINE_END);
 
         jButton1.setText("Inserir");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -113,11 +115,16 @@ public class Menu extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnCoderActionPerformed
 
-    private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
-        java.awt.EventQueue.invokeLater(() -> {
-            new Menu().setVisible(false);
-        });
-    }//GEN-LAST:event_btnCloseActionPerformed
+    private void btnConfigActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfigActionPerformed
+        boolean config = false;
+        if(config == false) {
+            dlgConfig.setVisible(true);
+            config = true;
+        } else {
+            dlgConfig.setVisible(false);
+            config = false;
+        }
+    }//GEN-LAST:event_btnConfigActionPerformed
 
     private void btnAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicionarActionPerformed
         // TODO add your handling code here:
@@ -148,10 +155,12 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Button btnAdicionar;
-    private javax.swing.JButton btnClose;
     private javax.swing.JButton btnCoder;
+    private javax.swing.JButton btnConfig;
     private java.awt.Button btnRemover;
     private javax.swing.JDialog dlgCoder;
+    private javax.swing.JDialog dlgConfig;
+    private javax.swing.JFileChooser fleAbreFecha;
     private javax.swing.JButton jButton1;
     private java.awt.Label label1;
     private java.awt.List list1;
