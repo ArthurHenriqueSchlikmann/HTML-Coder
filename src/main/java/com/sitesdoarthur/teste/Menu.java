@@ -76,7 +76,7 @@ public class Menu extends javax.swing.JFrame {
         });
         getContentPane().add(btnCoder, java.awt.BorderLayout.LINE_START);
 
-        btnClose.setText("Voltar");
+        btnClose.setText("CMD");
         btnClose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCloseActionPerformed(evt);
@@ -84,7 +84,7 @@ public class Menu extends javax.swing.JFrame {
         });
         getContentPane().add(btnClose, java.awt.BorderLayout.LINE_END);
 
-        jButton1.setText("Executar");
+        jButton1.setText("Inserir");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
