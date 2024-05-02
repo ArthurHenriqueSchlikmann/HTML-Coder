@@ -14,6 +14,7 @@ import java.awt.List;
 public class Menu extends javax.swing.JFrame {
 
     private boolean fecha = false;
+    private boolean config = false;
     
     /**
      * Creates new form Menu
@@ -101,7 +102,7 @@ public class Menu extends javax.swing.JFrame {
      * Exit the Application
      */
     private void exitForm(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_exitForm
-        System.exit(0);
+        System.out.print("saindo");
     }//GEN-LAST:event_exitForm
 
     private void btnCoderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCoderActionPerformed
@@ -116,7 +117,6 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCoderActionPerformed
 
     private void btnConfigActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfigActionPerformed
-        boolean config = false;
         if(config == false) {
             dlgConfig.setVisible(true);
             config = true;
