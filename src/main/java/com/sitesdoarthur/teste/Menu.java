@@ -102,7 +102,7 @@ public class Menu extends javax.swing.JFrame {
      * Exit the Application
      */
     private void exitForm(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_exitForm
-        System.out.print("saindo");
+        System.out.println("saindo");
     }//GEN-LAST:event_exitForm
 
     private void btnCoderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCoderActionPerformed
