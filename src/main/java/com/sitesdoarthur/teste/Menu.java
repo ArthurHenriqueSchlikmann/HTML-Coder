@@ -42,6 +42,7 @@ public class Menu extends javax.swing.JFrame {
 
         dlgCoder.setTitle("HTML Coder");
         dlgCoder.setBounds(new java.awt.Rectangle(0, 0, 500, 500));
+        dlgCoder.getContentPane().setLayout(new java.awt.BorderLayout());
 
         btnAdicionar.setLabel("Adicionar");
         btnAdicionar.addActionListener(new java.awt.event.ActionListener() {
@@ -67,6 +68,7 @@ public class Menu extends javax.swing.JFrame {
                 exitForm(evt);
             }
         });
+        getContentPane().setLayout(new java.awt.BorderLayout());
 
         btnCoder.setText("Abrir HTMLCoder");
         btnCoder.addActionListener(new java.awt.event.ActionListener() {
@@ -76,7 +78,7 @@ public class Menu extends javax.swing.JFrame {
         });
         getContentPane().add(btnCoder, java.awt.BorderLayout.LINE_START);
 
-        btnClose.setText("Voltar");
+        btnClose.setText("Sair");
         btnClose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCloseActionPerformed(evt);
@@ -99,7 +101,7 @@ public class Menu extends javax.swing.JFrame {
      * Exit the Application
      */
     private void exitForm(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_exitForm
-        System.exit(0);
+        System.out.println("Menu exited");
     }//GEN-LAST:event_exitForm
 
     private void btnCoderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCoderActionPerformed
@@ -114,9 +116,7 @@ public class Menu extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCoderActionPerformed
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
-        java.awt.EventQueue.invokeLater(() -> {
-            new Menu().setVisible(false);
-        });
+        System.exit(0);
     }//GEN-LAST:event_btnCloseActionPerformed
 
     private void btnAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicionarActionPerformed
