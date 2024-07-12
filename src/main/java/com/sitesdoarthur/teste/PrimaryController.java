@@ -13,6 +13,7 @@ public class PrimaryController {
     private MenuItem close;
     private MenuItem save;
     private MenuItem open;
+    private MenuItem update;
     
     public static String valorr = null;
     public static boolean ler = false;
@@ -39,6 +40,11 @@ public class PrimaryController {
     private void opnCoder() {
         Menu m = new Menu();
         m.init();
+        editor.setText(valorr);
+    }
+    
+    @FXML
+    private void atualizaTexto() {
         editor.setText(valorr);
     }
     
